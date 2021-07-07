@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= page_title or "My Page" %></title>
+  <script src="/static/tabler.min.js"></script>
+  <link rel="stylesheet" href="/static/tabler.min.css">
+</head>
+<body class="antialiased">
+  <div class="wrapper">
+  
+     <% render("views.navigation") %>
+
+    <div class="page-wrapper">
+
+        <% content_for("inner") %>  
+
+    </div>
+  </div>
+</body>
+</html>
